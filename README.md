@@ -1,3 +1,3 @@
-# Information
+# Portfolio
 
-This repository contains a collection of smart contracts designed for various use cases in the Ethereum ecosystem. These contracts are built using Solidity. Each contract is accompanied by a set of tests to verify their functionality.
+This repository showcases my learning journey as a smart contract security researcher. It contains a collection of smart contracts, audits, and security analysis reports.
