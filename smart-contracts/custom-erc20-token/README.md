@@ -30,5 +30,5 @@ This project demonstrates the creation, deployment, and testing of a custom ERC2
 
 ## Files
 
-1. [JohnsonToken.sol](./JohnsonToken.sol) - The custom ERC20 token contract
-2. [JohnsonToken-tests.js](./JohnsonToken-tests.js) - The test suite for the custom ERC20 token
+1. [`JohnsonToken.sol`](./JohnsonToken.sol) - The custom ERC20 token contract
+2. [`JohnsonToken-tests.js`](./JohnsonToken-tests.js) - The test suite for the custom ERC20 token
