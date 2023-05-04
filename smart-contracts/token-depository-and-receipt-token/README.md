@@ -43,6 +43,6 @@ This project is a collection of two smart contracts that allows users to deposit
 
 ## 4. <a name='Files'></a>Files
 
-- `rToken.sol`: The ERC20 receipt token contract
-- `TokensDepository.sol`: The main contract for depositing and withdrawing supported ERC20 tokens
-- `Depository-tests.js`: Test file containing tests for the smart contracts
+- [`rToken.sol`](./rToken.sol): The ERC20 receipt token contract
+- [`TokensDepository.sol`](./TokensDepository.sol): The main contract for depositing and withdrawing supported ERC20 tokens
+- [`Depository-tests.js`](./Depository-tests.js): Test file containing tests for the smart contracts
