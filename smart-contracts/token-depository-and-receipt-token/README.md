@@ -1,4 +1,4 @@
-# Receipt Token Smart Contract
+# Token Depository and Receipt Token Project
 
 1. [Introduction](#Introduction)
 2. [Users](#Users)
@@ -7,7 +7,7 @@
 
 ## 1. <a name='Introduction'></a>Introduction
 
-This project is a smart contract that allows users to deposit supported ERC20 tokens (AAVE, UNI, WETH) and receive receipt tokens with the "r" prefix (rAAVE, rUNI, rWETH). Users can later claim back their deposited tokens by providing the receipt tokens to the contract. This project is executed on an Ethereum mainnet fork.
+This project is a collection of two smart contracts that allows users to deposit supported ERC20 tokens (AAVE, UNI, WETH) and receive receipt tokens with the "r" prefix (rAAVE, rUNI, rWETH). Users can later claim back their deposited tokens by providing the receipt tokens to the depository. This project is executed on an Ethereum mainnet fork.
 
 ## 2. <a name='Users'></a>Users
 
