@@ -1,4 +1,4 @@
-# Random Blockhash Testing Suite
+# Insecure Randomness: Blockhash
 
 This project serves as an exercise in understanding and exploiting vulnerabilities related to blockchain randomness. The goal is to simulate an attack on a game that requires a user to win ten consecutive times. It demonstrates that randomness based on the blockhash can be exploited.
 
