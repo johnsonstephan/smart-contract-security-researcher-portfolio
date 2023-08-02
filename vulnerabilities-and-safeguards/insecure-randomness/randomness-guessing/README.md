@@ -13,7 +13,9 @@ This project is a practical exercise in smart contract security, showcasing how 
 
 ## 1. <a name='Introduction'></a>Introduction
 
-This project contains a single smart contract, `RandomVulnerabilitiesGuessing.sol`, which allows players to deposit ETH and guess a number. If the guessed number is correct, the player wins the entire game pot. The aim is to exploit the contract's weak randomness mechanism to consistently predict the winning number and drain the contract of its funds.
+This project contains two smart contracts. This first is `RandomVulnerabilitiesGuessing.sol`, which allows players to deposit ETH and guess a number. If the guessed number is correct, the player wins the entire game pot. The aim is to exploit the contract's weak randomness mechanism to consistently predict the winning number and drain the contract of its funds.
+
+The second contract is `Attack.sol`, which is used to drain the game contract of its funds. The attack contract is deployed by the attacker and is used to predict the winning number and win the game.
 
 ## 2. <a name='Users'></a>Users
 
@@ -24,7 +26,11 @@ This project contains a single smart contract, `RandomVulnerabilitiesGuessing.so
 
 ### 3.1. <a name='RandomVulnerabilitiesGuessing.sol'></a>RandomVulnerabilitiesGuessing.sol
 
-1. Develop the game contract (RandomVulnerabilitiesGuessing.sol) by allowing users to guess a number and win the balance if their guess is correct.
+1. Develop the game contract `RandomVulnerabilitiesGuessing.sol` by allowing users to guess a number and win the balance if their guess is correct.
+
+### 3.2. <a name='Attack.sol'></a>Attack.sol
+
+1. Develop the attack contract `Attack.sol` by allowing the attacker to drain the game contract of its funds by predicting the winning number.
 
 ## 4. <a name='Testing'></a>Testing
 
@@ -42,5 +48,5 @@ Validate functionality to cover the following:
 ## 6. <a name='Files'></a>Files
 
 - [`RandomVulnerabilitiesGuessing.sol`](./RandomVulnerabilitiesGuessing.sol): The main contract for the game, allowing users to guess a number and win the pot if their guess is correct.
-- [`RandomVulnerabilitiesGuessing-tests.js`](./OpenWave-tests.js): Test file containing tests for the game contract.
-- [`Attack.sol`](./SampleERC721.sol): The attack contract, allowing the attacker to drain the game contract of its funds.
+- [`Attack.sol`](./Attack.sol): The attack contract, allowing the attacker to drain the game contract of its funds.
+- [`RandomVulnerabilitiesGuessing-tests.js`](./RandomVulnerabilitiesGuessing-tests.js): Test file containing tests for the game contract.
