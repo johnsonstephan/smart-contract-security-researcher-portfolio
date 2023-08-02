@@ -18,7 +18,7 @@ describe("Custom ERC721 Token Testing Suite", function () {
 
     // Deploy the ERC721 contract from the deployer's address
     const ParodiNFTFactory = await ethers.getContractFactory(
-      "ParodiNFT",
+      "./ParodiNFT.sol:ParodiNFT",
       deployer
     );
     this.nft = await ParodiNFTFactory.deploy();

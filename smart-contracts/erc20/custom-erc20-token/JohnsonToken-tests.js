@@ -18,7 +18,7 @@ describe("Custom ERC20 Token Testing", function () {
 
     // Deployment: Deploy the JohnsonToken contract, from the deployer
     const JohnsonTokenFactory = await ethers.getContractFactory(
-      "JohnsonToken",
+      "./JohnsonToken.sol:JohnsonToken",
       deployer
     );
     this.token = await JohnsonTokenFactory.deploy();

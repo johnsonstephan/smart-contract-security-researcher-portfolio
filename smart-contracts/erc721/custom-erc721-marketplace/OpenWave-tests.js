@@ -13,7 +13,7 @@ describe("Custom ERC721 Marketplace Testing Suite", function () {
   // Test I: User1 should be able to create a NFT collection
   it("[Test I] Should allow User1 to create a NFT collection", async function () {
     let NFTFactory = await ethers.getContractFactory(
-      "contracts/utils/SampleERC721.sol:SampleERC721",
+      "./SampleERC721.sol:SampleERC721",
       user1
     );
     this.pixelSagaNFT = await NFTFactory.deploy("Pixel Saga", "PIX", 1000);
@@ -53,7 +53,7 @@ describe("Custom ERC721 Marketplace Testing Suite", function () {
   // Test VI: Deploying the OpenWave marketplace
   it("[Test VI] Should deploy OpenWave marketplace", async function () {
     let MarketplaceFactory = await ethers.getContractFactory(
-      "OpenWave",
+      "./OpenWave.sol:OpenWave",
       deployer
     );
     this.marketplace = await MarketplaceFactory.deploy();

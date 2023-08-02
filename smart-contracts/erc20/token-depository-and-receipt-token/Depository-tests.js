@@ -90,7 +90,7 @@ describe("Receipt Token Testing Suite", function () {
     // Objective: Deploy the TokensDepository contract with the supported assets
     // Get the contract factory for the TokensDepository and deploy it using the deployer account
     const TokensDepositoryFactory = await ethers.getContractFactory(
-      "contracts/erc20-2/TokensDepository.sol:TokensDepository",
+      "./TokensDepository.sol:TokensDepository",
       deployer
     );
 
@@ -104,17 +104,17 @@ describe("Receipt Token Testing Suite", function () {
     // Objective: Load the corresponding receipt tokens into objects under `this` (e.g., this.rAave, this.rUni, this.rWeth)
     // rAAVE
     this.rAAVE = await ethers.getContractAt(
-      "rToken",
+      "./rToken.sol:rToken",
       await this.depository.receiptTokens(AAVE_TOKEN_ADDRESS)
     );
     // rUNI
     this.rUNI = await ethers.getContractAt(
-      "rToken",
+      "./rToken.sol:rToken",
       await this.depository.receiptTokens(UNI_TOKEN_ADDRESS)
     );
     // rWETH
     this.rWETH = await ethers.getContractAt(
-      "rToken",
+      "./rToken.sol:rToken",
       await this.depository.receiptTokens(WETH_TOKEN_ADDRESS)
     );
   });
