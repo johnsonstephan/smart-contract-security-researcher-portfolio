@@ -25,7 +25,7 @@ describe("Random Blockhash Testing Suite", function () {
     // We get the contract factory for the RandomBlockhash game,
     // which enables us to deploy the contract later.
     const gameFactory = await ethers.getContractFactory(
-      "RandomBlockhash.sol:RandomBlockhash",
+      "./RandomBlockhash.sol:RandomBlockhash",
       deployer
     );
 
@@ -44,7 +44,7 @@ describe("Random Blockhash Testing Suite", function () {
     // We get the contract factory for the attacker,
     // which enables us to deploy the contract later.
     const attackGameFactory = await ethers.getContractFactory(
-      "Attack",
+      "./Attack.sol:Attack",
       attacker
     );
     // Using the factory, we deploy the contract and store the instance of the contract in 'this.attackerContract'.

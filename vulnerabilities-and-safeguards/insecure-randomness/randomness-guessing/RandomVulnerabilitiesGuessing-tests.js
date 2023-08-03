@@ -24,7 +24,7 @@ describe("Random Vulnerabilities Guessing Testing Suite", function () {
 
     // Deploy the Game contract and deposit the initial game pot
     const gameFactory = await ethers.getContractFactory(
-      "RandomVulnerabilitiesGuessing.sol:Random Vulnerabilities Guessing",
+      "./RandomVulnerabilitiesGuessing.sol:Random Vulnerabilities Guessing",
       deployer
     );
     this.game = await gameFactory.deploy({ value: GAME_POT });
